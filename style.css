@@ -1,0 +1,250 @@
+html {
+    background: #d8f3dc;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', 'Georgia', Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.banner, .projects-s, hr{
+    margin: 50px;
+}
+
+.projects-s {
+    cursor: pointer;
+}
+
+.latest-work {
+    font-size: bold;
+    font-size: 22px;
+    color: #2d6a4f;
+}
+
+.work-description {
+    color: #40916c
+}
+
+.hero {
+    height: 80vh;
+    background-image: url(knowledge.jpg);
+    background-repeat: no-repeat;
+    background-position: top 75% right 10%;
+    background-size: 25% 40%;
+}
+
+hr {
+    border-top: 4px dotted #40916c;
+}
+
+.pro-img {
+    margin-top: 20px;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(
+        45deg, 
+        #b7e4c7,
+        #52b788
+    );
+    width: 100vw;
+    max-height: 12vh;
+}
+
+.actual-name {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.burger {
+    margin: 5px;
+    display: none;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background: #22223b;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 4vw;
+}
+
+li {
+    color: #22223b;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #22223b;
+}
+
+.my-name {
+    margin: 20px;
+    color: #1b4332;
+    font-size: 12px;
+}
+
+.about-me-p {
+    font-size: 25px;
+    text-align: center;
+    color: #284b48;
+    width: 50vw;
+    padding-top: 30vh;
+}
+
+.view-p {
+    font-size: 15px;
+    color: #99582a;
+}
+
+.pro-desc {
+    font-size: 16px;
+    color: #2d6a4f;
+}
+
+.pro-img {
+    height: 35vh;
+    border-radius: 20px 20px 20px 0;
+}
+
+.project h3 {
+    color: #284b48;
+}
+
+.projects-div {
+    padding-top: 40px;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    max-width: 50vw;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 20px;
+    background: #f4f1de;
+}
+
+footer {
+    display: flex;
+    gap: 2em;
+    background: linear-gradient(
+        45deg, 
+        #b7e4c7,
+        #95d5b2
+    );
+    justify-content: space-around;
+}
+
+.footer-p {
+    font-size: 12px;
+}
+
+svg {
+    margin-top: 0.3em;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 400px) and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+   .nav-links {
+    position: absolute;
+    right: 0;
+    height: 92vh;
+    top: 0;
+    background:#52b788;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    cursor: pointer;
+   }
+
+   .nav-links {
+    opacity: 0;
+    transition: transform 0.5s ease-in;
+   }
+
+   .burger {
+    display: block;
+    cursor: pointer;
+   }
+
+   .nav-links:hover {
+    opacity: 100;
+   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1100px) {
+    .footer-p {
+        font-size: 14px;
+    }
+
+    svg {
+        margin-top: 0.5em;
+    }
+
+    .hero {
+        background-position: top 230px right 50px;
+        background-size: 35% 60%;
+    }
+
+    .pro-box {
+        display: flex;
+        gap: 10vw;
+        flex-wrap: wrap;
+    }
+
+    .project {
+        max-width: 35%;
+    }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1570px) {
+    .footer-p {
+        font-size: 18px;
+    }
+    
+    svg {
+        margin-top: 0.8em;
+    }
+
+    .hero {
+        background-position: top 210px right 150px;
+        background-size: 25% 60%;
+    }
+
+    .project {
+        max-width: 25%;
+    }
+
+    .pro-box {
+        display: flex;
+        gap: 5vw;
+    }
+
+    .latest-work {
+        text-align: center;
+    }
+
+    .work-description {
+        text-align: center;
+        font-size: 18px;
+    }
+}
